@@ -1,0 +1,35 @@
+## --- IDE / Visual Studio ---
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## --- Build Artifacts ---
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## --- Project Specific Exclusions ---
+# Ignore the actual memory dumps (often very large)
+*.exe
+*.bin
+*.dmp
+!ExtractKeysFromDump.exe # Optional: Un-comment if you want to track the actual tool binary
+
+# Ignore extracted key files to prevent leaking them
+*.dat
+
+## --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+## --- .NET / NuGet ---
+project.lock.json
+project.assets.json
+.nuget/
+*.nupkg
